@@ -5,8 +5,8 @@ export default function taskBlock(trueOrFalse) {
   const task2 = true;
 
   if (trueOrFalse) {
-    let task = true;   // block-scoped
-    let task2 = false; // block-scoped
+    const newTask = true;   // block-scoped newTask
+    const newTask2 = false; // block-scoped newTask2
   }
 
   return [task, task2];
